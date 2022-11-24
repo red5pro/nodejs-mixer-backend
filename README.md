@@ -66,10 +66,10 @@ if (useSSL) {
 Start the Node.js server with the following command:
 
 ```sh
-sudo PORT=443 SM_TOKEN=<SM-API_token> SM_HOST=https://<Hostname-of-Stream-Manager> CERT=<path-to-fullchain.pem> KEY=<path-to-private-key.pem> forever start index.js 
+sudo SSL=true SM_TOKEN=<SM-API_token> SM_HOST=https://<Hostname-of-Stream-Manager> CERT=<path-to-fullchain.pem> KEY=<path-to-private-key.pem> forever start index.js 
 ```
 
-> By default, if PORT is not specified, the websocket server will run on localhost:8001.
+> Setting SSL=true will run the server on port `443`. The default port for http is 8001, use `PORT=<port>` to override.
 
 ## Backend Mixer Testbeds
 
