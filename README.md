@@ -17,11 +17,11 @@ This Node.js-based WebSocket server provides the communication between the Strea
 
 ```sh
 sudo apt-get update
-curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
+curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
 sudo apt-get install -y nodejs
 sudo apt-get install build-essential
-sudo apt-get install forever
+sudo npm install forever -g
 ```
 
 cd into the project directory, then run:
